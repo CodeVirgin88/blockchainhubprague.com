@@ -1,0 +1,91 @@
+---
+new_page_extension: md
+auto_deploy: true
+admin_path: ''
+webhook_url: 
+sections:
+- type: heading
+  label: Blog
+- type: directory
+  path: content/blog/events
+  label: Events
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - blog-post
+- type: directory
+  path: content/blog/posts
+  label: Blog Posts
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - blog-post
+- type: directory
+  path: content/blog/hub-updates
+  label: Hub Updates
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - blog-post
+- type: directory
+  path: content/blog/investability-series
+  label: Investability Series
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - blog-post
+- type: heading
+  label: Pages
+- type: document
+  path: content/about/_index.md
+  label: About
+- type: document
+  path: content/contact/_index.md
+  label: Contact
+- type: heading
+  label: Other Things
+- type: directory
+  path: content/jobs
+  label: Jobs
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - job
+- type: directory
+  path: content/lists/employees
+  label: Employees
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - employees
+- type: directory
+  path: content/lists/member_startups
+  label: Member Startups
+  create: all
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - member-startup
+upload_dir: static/media
+public_path: ''
+front_matter_path: ''
+use_front_matter_path: false
+file_template: ":filename:"
+build:
+  preview_command: hugo -D
+  publish_command: hugo
+  preview_env:
+  - HUGO_ENV=staging
+  - HUGO_VERSION=0.53
+  publish_env:
+  - HUGO_ENV=production
+  - HUGO_VERSION=0.53
+  preview_output_directory: public
+  output_directory: public
+version: '0.53'

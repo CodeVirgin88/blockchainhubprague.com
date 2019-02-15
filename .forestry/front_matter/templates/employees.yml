@@ -1,0 +1,30 @@
+---
+label: Employee
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: name
+  label: Name
+  config:
+    required: true
+- type: text
+  name: title
+  label: Title
+  config:
+    required: false
+- type: text
+  name: url
+  label: Website
+- type: text
+  name: linkedin_personal
+  label: LinkedIn
+  description: linkedin username from linkedin.com/in/________
+- type: number
+  name: priority
+  label: Page Priority
+  config:
+    min: '1'
+    max: '10'
+    step: '1'
+    required: true

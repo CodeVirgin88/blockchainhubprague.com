@@ -1,0 +1,12 @@
+---
+label: Job
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+pages:
+- content/jobs/senior-mobile-engineer.md

@@ -1,217 +1,188 @@
-baseURL = "http://example.org/"
+baseURL = "/"
+canonifyURLs = true
+disqusShortname = ""
+enableRobotsTXT = true
+googleAnalytics = ""
 languageCode = "en-us"
-title = "blockchainhubprague.com"
-theme = "hugo-icon"
-
-# Metadata
+paginate = 3
+pluralizeListTitles = false
+preserveTaxonomyNames = true
+theme = "hugo-future-imperfect"
+title = "Blockchain Hub Prague"
+[[menu.main]]
+name = "Meetup Events"
+url = "https://www.meetup.com/BlockchainHubPrague/events/"
+weight = 5
+[[menu.main]]
+identifier = "fa fa-home"
+name = "Home"
+url = "/"
+weight = 1
+[[menu.main]]
+identifier = "fa fa-id-card-o"
+name = "About"
+url = "/about/"
+weight = 2
+[[menu.main]]
+identifier = "fa fa-newspaper-o"
+name = "Blog"
+url = "/blog/"
+weight = 3
+[[menu.main]]
+identifier = "fa fa-envelope-o"
+name = "Contact"
+url = "/contact/"
+weight = 4
 [params]
-  author = "Your name"
-  description = "Cool description"
-
-# Hero section (from here on is for icon theme)
-[params.hero]
-  img = "images/hero_bg.jpg"
-  title = "Create awesome things for better web"
-  description = "Lovingly hand-crafted by the fine folks at [FreeHTML5.co](http://freehtml5.co/)"
-
-# Navigation section
-[params.nav]
-  mission = "Our Mission"
-  services = "Services"
-  team = "The Team"
-  contact = "Get In Touch"
-  # Include logo instead if HOME:
-  # logo = "path/to/logo"
-
-# Mission section
-[params.mission]
-  enable = true
-
-  [params.mission.images]
-    enable = true
-
-    [[params.mission.images.list]]
-      img = "images/img_3.jpg"
-    [[params.mission.images.list]]
-      img = "images/img_2.jpg"
-    [[params.mission.images.list]]
-      img = "images/img_1.jpg"
-    [[params.mission.images.list]]
-      img = "images/img_4.jpg"
-
-  [[params.mission.item]]
-    weight = 1
-    name = "marketing"
-    title = "Marketing"
-    subtitle = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione voluptate laborum sapiente officiis molestiaea."
-    description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae aliquid aperiam eveniet officia molestiae temporibus beatae dolores dignissimos aspernatur eius doloremque ad, eaque pariatur, repellendus illum, nostrum velit necessitatibus molestias.</p><ul class='checked'><li>Web Development</li><li>User Interface Experts</li><li>Pixel Perfect Design</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
-
-  [[params.mission.item]]
-    weight = 2
-    name = "analysis"
-    title = "Resources"
-    subtitle = "Quam quasi illum expedita dicta nemo fugit reprehenderit similique! Corporis praesentium magnam sequi."
-    description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla explicabo, molestiae eaque fugiat dolores est esse, doloremque placeat assumenda corrupti officia dolorum. Sunt saepe ut, explicabo consectetur, nostrum illo est.</p><ul class='checked'><li>Free HTML5 Templates</li><li>Free Bootstrap Templates</li><li>Free HTML5 Bootstrap Templates</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
-
-  [[params.mission.item]]
-    weight = 3
-    name = "strategy"
-    title = "Strategy"
-    subtitle = "Magnam iste obcaecati illo laboriosam amet. Dignissimos sed quis voluptatum corporis adipisci amet."
-    description = "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio dolore illum expedita placeat debitis, dignissimos obcaecati et modi. Possimus id dicta consequuntur veritatis, reiciendis at expedita voluptate sint distinctio eligendi!</p><ul class='checked'><li>Web Development</li><li>User Interface Experts</li><li>Pixel Perfect Design</li></ul><p><a href='#' class='btn btn-primary btn-outline fh5co-content-nav' data-nav-section='contact'>Get In Touch</a></p>"
-
-# Services section
-[params.services]
-  enable = true
-  video = true
-  vidlink = "https://vimeo.com/channels/staffpicks/93951774"
-  title = "Our Services"
-  description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-
-  [[params.services.item]]
-    icon = "icon-present"
-    title = "Web Development"
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-
-  [[params.services.item]]
-    icon = "icon-eye"
-    title = "Retina Ready"
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-
-  [[params.services.item]]
-    icon = "icon-paper-plane"
-    title = "Light Speed"
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-
-  [[params.services.item]]
-    icon = "icon-pencil"
-    title = "Copyrighting"
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-
-  [[params.services.item]]
-    icon = "icon-rocket"
-    title = "Load Fast"
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-
-  [[params.services.item]]
-    icon = "icon-support"
-    title = "Customer Support"
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-
-# Work section
-[params.work]
-  enable = true
-
-  [[params.work.item]]
-    title = "Consectetur adipisicing"
-    subtitle = "Web Design"
-    img = "images/img_1.jpg"
-
-  [[params.work.item]]
-    title = "Consectetur adipisicing"
-    subtitle = "Web Design"
-    img = "images/img_2.jpg"
-
-  [[params.work.item]]
-    title = "Consectetur adipisicing"
-    subtitle = "Web Design"
-    img = "images/img_3.jpg"
-
-  [[params.work.item]]
-    title = "Consectetur adipisicing"
-    subtitle = "Web Design"
-    img = "images/img_2.jpg"
-
-  [[params.work.item]]
-    title = "Consectetur adipisicing"
-    subtitle = "Web Design"
-    img = "images/img_3.jpg"
-
-  [[params.work.item]]
-    title = "Consectetur adipisicing"
-    subtitle = "Web Design"
-    img = "images/img_2.jpg"
-
-  [[params.work.item]]
-    title = "Consectetur adipisicing"
-    subtitle = "Web Design"
-    img = "images/img_3.jpg"
-
-  [[params.work.item]]
-    title = "Consectetur adipisicing"
-    subtitle = "Web Design"
-    img = "images/img_4.jpg"
-
-# Team section
-[params.team]
-  enable = true
-  title = "Meet The Team"
-  description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-
-  [[params.team.item]]
-    name = "Jean Doe"
-    position = "Chief legend"
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-    img = "images/person1.jpg"
-    facebook = "#"
-    twitter = "#"
-    dribbble = "#"
-    instagram = "#"
-    github = "#"
-    linkedin = "#"
-
-  [[params.team.item]]
-    name = "Alice Doe"
-    position = "Chief overlord"
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-    img = "images/person2.jpg"
-    facebook = "#"
-    twitter = "#"
-    dribbble = "#"
-    instagram = "#"
-    github = "#"
-
-  [[params.team.item]]
-    name = "John Doe"
-    position = "Chief haranguer"
-    description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-    img = "images/person3.jpg"
-    facebook = "#"
-    twitter = "#"
-    dribbble = "#"
-    instagram = "#"
-    github = "#"
-
-  # [[params.team.item]]
-  #   name = "Jason Doe"
-  #   position = "Chief haranguer"
-  #   description = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-  #   img = "images/person3.jpg"
-  #   facebook = "#"
-  #   twitter = "#"
-  #   dribbble = "#"
-  #   instagram = "#"
-  #   github = "#"
-
-# Contact section
-[params.contact]
-  enable = true
-  title = "Get In Touch"
-  message = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet nam itaque ipsam iste provident quo ipsam iste provident."
-  name_placeholder = "Your name"
-  email_placeholder = "Your email"
-  email_disclaimer = "We'll never share your email with anyone else."
-  message_placeholder = "Please enter a message."
-  button_text = "Submit"
-
-# Footer section
-# Note here that the copyright and attribution statement must remain as part of the license agreement. If you wish to remove this, please contact freehtml5 and pay for a professional license.
-[params.footer]
-  enable = true
-  note = "<p><small>&copy; 2016 Free HTML5 Template. All Rights Reserved. <br> Designed by <a href='http://freehtml5.co/' target='_blank'>FreeHTML5.co</a> Demo Images: <a href='http://pexels.com/' target='_blank'>Pexels</a><br>Hugo port by <a href='https://github.com/SteveLane/' target='_blank'>SteveLane</a></small></p>"
-  github = "#"
-  twitter = "#"
-  facebook = "#"
-  vine = "#"
-  linkedin = "#"
-  instagram = "#"
+MathJaxCDN = "//cdn.bootcss.com"
+MathJaxVersion = "2.7.1"
+categoriesByCount = true
+customCSS = ["default"]
+customJS = ["default"]
+description = "Startup Incubator Blockchain Hub Prague Czech Republic for Entrepreneurs and Small Business"
+disable_highlight = false
+dynamicTitles = true
+faviconVersion = ""
+highlightjsCDN = "//cdn.bootcss.com"
+highlightjsLang = ["r", "yaml", "css"]
+highlightjsTheme = "github"
+highlightjsVersion = "9.11.0"
+includeReadingTime = true
+loadFavicon = false
+navbarTitle = "Blockchain Hub Prague"
+rssAppearAtBottom = true
+rssAppearAtTop = true
+showSidebarCategories = true
+socialAppearAtBottom = true
+socialAppearAtTop = true
+socialShare = true
+socialShareEmail = true
+socialShareFacebook = true
+socialShareLinkedin = true
+socialSharePinterest = false
+socialShareReddit = true
+socialShareStumbleupon = false
+socialShareTwitter = true
+viewMorePostLink = "/blog/"
+[params.intro]
+about = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tellus lacus, auctor vehicula molestie quis, tempor quis velit. Quisque in quam ac leo efficitur vulputate. Phasellus ullamcorper aliquam sodales. Maecenas sit amet condimentum ipsum. Proin sit amet ligula elit. Mauris."
+header = "Blockchain Hub Prague"
+paragraph = "For blockchain projects\u2028to synergize and succeed."
+[params.intro.pic]
+alt = "Hugo Future Imperfect"
+circle = false
+imperfect = false
+src = "/media/main/BH-logo.png"
+width = ""
+[params.members]
+title = "Member Startups"
+[[params.members.item]]
+description = "Scalable Ethereum sidechains solution as a service."
+funding = "Token Sale, Dec 2018"
+logo = "AE-logo.png"
+name = "Aerum"
+url = "https://aerum.com"
+[params.members.item.social]
+facebook = "aerum_official"
+github = "aerumtechnology"
+linkedin_company = "aerum-official"
+reddit = "aerum"
+telegram = "aerum_news"
+twitter = "Aerum_official"
+[[params.members.item]]
+description = "Top 100 cryptocurrency. Privacy Technology."
+funding = "Venture-Funded"
+logo = "ZC-logo.png"
+name = "ZCoin"
+url = "https://zcoin.io"
+[params.members.item.social]
+facebook = "zcoinofficial"
+reddit = "zcoin"
+telegram = "zcoinproject"
+twitter = "zcoinofficial"
+youtube = "zcoin"
+[[params.members.item]]
+description = "Open innovation and ideation platform for startups."
+funding = "ICO, Jan 2018"
+logo = "CH-logo.png"
+name = "Crowdholding"
+url = "https://crowdholding.com"
+[params.members.item.social]
+facebook = "Crowdholding"
+github = "Crowdholding"
+linkedin_company = "crowdholding"
+telegram = "Crowdholding"
+twitter = "crowdholding"
+[[params.members.item]]
+description = "AI-powered crypto trading and portfolio management."
+funding = "Token Sale, Sept 2017"
+logo = "ITF-logo.png"
+name = "Intelligent Trading Foundation"
+url = "https://intelligenttrading.org"
+[params.members.item.social]
+facebook = "IntelligentTradingFoundation"
+github = "IntelligentTrading"
+linkedin_company = "intelligenttrading"
+reddit = "intelligenttrading"
+telegram = "intelligenttrading"
+twitter = "tryITF"
+[[params.members.item]]
+description = "mobile app for fasion and art in digital economy."
+funding = "Privately-Funded"
+logo = "NL-logo.png"
+name = "New Life"
+url = "https://newlife.ai"
+[params.members.item.social]
+facebook = "newlifeai"
+instagram = "newlife.ai"
+linkedin_company = "newcoin"
+medium = "NEWCOIN.Network"
+twitter = "NewLifeAI"
+youtube = "newlifeai"
+[params.postAmount]
+sidebar = 5
+[params.social]
+behance = ""
+bitbucket = ""
+codepen = ""
+deviantart = ""
+dribbble = ""
+email = "info@blockchainhubprague.com"
+facebook = "blockchainhubprague"
+flickr = ""
+foursquare = ""
+gitlab = ""
+googlescholar = ""
+instagram = ""
+jsfiddle = ""
+linkedin = ""
+linkedin_company = "blockchain-hub-prague"
+medium = ""
+orcid = ""
+pinterest = ""
+qq = ""
+quora = ""
+reddit = ""
+researchgate = ""
+skype = ""
+slideshare = ""
+snapchat = ""
+stackoverflow = ""
+telegram = ""
+tumblr = ""
+twitter = ""
+vimeo = ""
+vine = ""
+wechat = ""
+whatsapp = ""
+wordpress = ""
+xing = ""
+youtube = ""
+[params.staticman]
+branch = ""
+repo = ""
+staticman = false
+username = ""
+[params.staticman.recaptcha]
+secret = "ENCRYPTED_SECRET"
+sitekey = "SITE_KEY"
